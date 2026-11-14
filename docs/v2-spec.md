@@ -158,8 +158,8 @@ Focus: 2px accent outline, offset 3px, everywhere. Selection color = accent.
   Stats (dl): `5+` years frontend · `1` year backend · `5` remote roles. Scroll cue at bottom ("Scroll" + animated 1px line).
 - About: h2 "Frontend-focused, <em>full-stack</em> capable." Summary paragraph (resume's Professional Summary, verbatim).
   Strengths list (5, from resume Core Strengths) as numbered rows `01…05` with title + description.
-  Sub-block "Education": two entries — **B.Sc. Computer Science** · "Completed"; **B.Sc. Computer Engineering** ·
-  "Hakim Sabzevari University, Sabzevar" · "In progress". Sub-block "Languages": Persian — Native;
+  Sub-block "Education": **B.Sc. Computer Science** · Completed; **B.Sc. Computer Engineering** · Completed
+  ("Hakim Sabzevari University, Sabzevar"). Sub-block "Languages": Persian — Native;
   English — Professional working proficiency (strong in technical reading and writing).
 - Skills: h2 "The <em>toolkit</em>." 6 `.skill-group` cards (index-numbered, title, chip list). Chips exactly as v1 `index.html`.
 - Experience: h2 "Where I've <em>shipped</em>." Timeline `ol.timeline` of 5 `.job` items with data attributes (§3),
