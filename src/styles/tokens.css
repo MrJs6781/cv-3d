@@ -1,0 +1,125 @@
+/* Design tokens: scales are theme-independent, colours live on [data-theme]. */
+:root {
+  --font-sans: "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --font-serif: "Instrument Serif", "Iowan Old Style", Georgia, serif;
+
+  /* spacing scale (4px base) */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 24px;
+  --sp-6: 32px;
+  --sp-7: 48px;
+  --sp-8: 64px;
+  --sp-9: 96px;
+  --sp-10: 128px;
+
+  /* radii */
+  --r-xs: 6px;
+  --r-sm: 10px;
+  --r-md: 14px;
+  --r-lg: 18px;
+  --r-pill: 999px;
+
+  /* fluid type */
+  --fs-xs: clamp(0.72rem, 0.7rem + 0.1vw, 0.78rem);
+  --fs-sm: clamp(0.84rem, 0.82rem + 0.1vw, 0.9rem);
+  --fs-base: clamp(1rem, 0.96rem + 0.2vw, 1.0625rem);
+  --fs-lg: clamp(1.08rem, 1rem + 0.45vw, 1.3rem);
+  --fs-h3: clamp(1.1rem, 1.04rem + 0.35vw, 1.35rem);
+  --fs-h2: clamp(2rem, 1.2rem + 3.4vw, 3.75rem);
+  --fs-mail: clamp(1.1rem, 0.6rem + 3.2vw, 2.5rem);
+
+  /* motion */
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --dur: 200ms;
+
+  /* layout */
+  --nav-h: 64px;
+  --container: 1440px;
+  --gutter: clamp(20px, 5vw, 72px);
+  --col-gap: clamp(16px, 2vw, 32px);
+}
+
+:root,
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #07080c;
+  --bg-elev: rgba(16, 18, 26, 0.62);
+  --bg-card: rgba(14, 16, 24, 0.84);
+  --bg-elev-strong: rgba(24, 27, 38, 0.82);
+  --bg-elev-solid: #10121a;
+  --nav-bg: rgba(7, 8, 12, 0.6);
+  --ink: #eceef3;
+  --ink-2: #b6bccc;
+  --muted: #8a91a3;
+  --line: rgba(255, 255, 255, 0.08);
+  --line-strong: rgba(255, 255, 255, 0.2);
+  --accent: #7aa2ff;
+  --accent-2: #b28cff;
+  --mint: #6ee7d2;
+  --mint-text: #6ee7d2;
+  --on-accent: #07080c;
+  --chip-bg: rgba(255, 255, 255, 0.04);
+  --hover-bg: rgba(255, 255, 255, 0.05);
+  --glow: rgba(122, 162, 255, 0.16);
+  --glow-2: rgba(178, 140, 255, 0.1);
+  --scrim: rgba(4, 5, 8, 0.62);
+  --shadow-card: inset 0 1px 0 rgba(255, 255, 255, 0.04), 0 14px 32px -18px rgba(0, 0, 0, 0.7);
+  --shadow-pop: 0 28px 72px -20px rgba(0, 0, 0, 0.8);
+  --grain-opacity: 0.035;
+  --grain-blend: overlay;
+
+  --scene-surface: #10131c;
+  --scene-ink: #e6e9f2;
+  --scene-muted: #5d6478;
+  --scene-line: #2a3042;
+  --scene-accent: #7aa2ff;
+  --scene-accent-2: #b28cff;
+  --scene-mint: #6ee7d2;
+  --scene-blend: additive;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f5f4ef;
+  --bg-elev: rgba(255, 255, 255, 0.72);
+  --bg-card: rgba(255, 255, 255, 0.88);
+  --bg-elev-strong: rgba(255, 255, 255, 0.94);
+  --bg-elev-solid: #fffefb;
+  --nav-bg: rgba(245, 244, 239, 0.72);
+  --ink: #0e1016;
+  --ink-2: #3a4151;
+  --muted: #5a6172;
+  --line: rgba(14, 16, 22, 0.09);
+  --line-strong: rgba(14, 16, 22, 0.24);
+  --accent: #3355f0;
+  --accent-2: #7c4dff;
+  --mint: #0f9f87;
+  --mint-text: #0a7a67;
+  --on-accent: #ffffff;
+  --chip-bg: rgba(14, 16, 22, 0.035);
+  --hover-bg: rgba(14, 16, 22, 0.045);
+  --glow: rgba(51, 85, 240, 0.1);
+  --glow-2: rgba(124, 77, 255, 0.07);
+  --scrim: rgba(245, 244, 239, 0.62);
+  --shadow-card: inset 0 1px 0 rgba(255, 255, 255, 0.9), 0 1px 2px rgba(60, 45, 20, 0.05), 0 16px 34px -20px rgba(60, 45, 20, 0.22);
+  --shadow-pop: 0 28px 72px -24px rgba(60, 45, 20, 0.35);
+  --grain-opacity: 0.05;
+  --grain-blend: multiply;
+
+  --scene-surface: #ffffff;
+  --scene-ink: #11141b;
+  --scene-muted: #9aa1b1;
+  --scene-line: #d9dce4;
+  --scene-accent: #3355f0;
+  --scene-accent-2: #7c4dff;
+  --scene-mint: #0f9f87;
+  --scene-blend: normal;
+}
+
+@media (max-width: 767.98px) {
+  :root { --nav-h: 58px; }
+}

@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <script>try{var t=localStorage.getItem('theme');document.documentElement.dataset.theme=t||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark')}catch(e){document.documentElement.dataset.theme='dark'}</script>
+  <title>Abolfazl Javadinia — Senior Frontend Engineer</title>
+  <meta name="description" content="Senior Frontend Engineer with 5+ years building scalable, high-performance web apps with React, Next.js and TypeScript. Open to remote." />
+  <meta name="theme-color" content="#07080c" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#f5f4ef" media="(prefers-color-scheme: light)" />
+  <meta property="og:title" content="Abolfazl Javadinia — Senior Frontend Engineer" />
+  <meta property="og:description" content="React · Next.js · TypeScript. Design systems, SSR, performance and AI-driven dashboards." />
+  <meta property="og:type" content="profile" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Abolfazl Javadinia — Senior Frontend Engineer" />
+  <meta name="twitter:description" content="React · Next.js · TypeScript. Design systems, SSR, performance and AI-driven dashboards." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2307080c'/%3E%3Ctext x='16' y='21' font-family='monospace' font-size='13' font-weight='700' text-anchor='middle' fill='%237aa7ff'%3EAJ%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/styles/index.css" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Abolfazl Javadinia","jobTitle":"Senior Frontend Engineer",
+   "address":{"@type":"PostalAddress","addressLocality":"Neyshabur","addressCountry":"IR"},
+   "sameAs":["https://linkedin.com/in/abolfazl-javadineya","https://github.com/MrJs6781","https://x.com/mrjs6781","https://medium.com/@mr.js.programmer"],
+   "knowsAbout":["React","Next.js","TypeScript","Design Systems","Web Performance"]}
+  </script>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-arrow" viewBox="0 0 16 16"><path d="M4.5 11.5l7-7M5.5 4.5h6v6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-search" viewBox="0 0 16 16"><circle cx="7" cy="7" r="4.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 10.5L14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas id="scene" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-nav">
+    <a class="brand" href="#top" aria-label="Abolfazl Javadinia, back to top">AJ<span>.</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#about" data-nav="1">Profile</a>
+      <a href="#skills" data-nav="2">Skills</a>
+      <a href="#experience" data-nav="3">Experience</a>
+      <a href="#projects" data-nav="4">Projects</a>
+      <a href="#contact" data-nav="5">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button id="palette-open" class="kbd-btn" type="button" aria-haspopup="dialog" aria-label="Search">
+        <svg class="kbd-icon" width="16" height="16" aria-hidden="true"><use href="#i-search"/></svg><span class="kbd-label">Search</span> <kbd data-kbd-mod>Ctrl</kbd><kbd>K</kbd>
+      </button>
+      <button id="theme-toggle" class="icon-btn" type="button" aria-label="Switch to light theme" aria-pressed="false">
+        <svg class="theme-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+          <mask id="moon-mask"><rect width="24" height="24" fill="#fff"/><circle class="moon-cut" cx="24" cy="0" r="7" fill="#000"/></mask>
+          <circle class="sun-core" cx="12" cy="12" r="4.5" fill="currentColor" mask="url(#moon-mask)"/>
+          <g class="sun-rays" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+            <path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/>
+          </g>
+        </svg>
+      </button>
+      <button id="menu-toggle" class="icon-btn" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <svg class="menu-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+          <path class="menu-line menu-line-1" d="M5 9h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          <path class="menu-line menu-line-2" d="M5 15h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+    <div class="nav-progress" aria-hidden="true"></div>
+  </header>
+
+  <div id="mobile-menu" class="mobile-menu" hidden>
+    <nav class="mobile-menu-links" aria-label="Mobile">
+      <a href="#about" data-nav="1"><span class="mm-num">01</span>Profile</a>
+      <a href="#skills" data-nav="2"><span class="mm-num">02</span>Skills</a>
+      <a href="#experience" data-nav="3"><span class="mm-num">03</span>Experience</a>
+      <a href="#projects" data-nav="4"><span class="mm-num">04</span>Projects</a>
+      <a href="#contact" data-nav="5"><span class="mm-num">05</span>Contact</a>
+    </nav>
+    <div class="mobile-menu-foot">
+      <span class="mm-label">Theme</span>
+      <button class="theme-seg" type="button" data-theme-toggle aria-label="Switch to light theme" aria-pressed="false">
+        <span class="theme-seg-opt" data-opt="light">Light</span><span class="theme-seg-opt" data-opt="dark">Dark</span>
+      </button>
+    </div>
+  </div>
+
+  <ol class="rail" aria-hidden="true">
+    <li data-nav="0"></li><li data-nav="1"></li><li data-nav="2"></li><li data-nav="3"></li><li data-nav="4"></li><li data-nav="5"></li>
+  </ol>
+
+  <main id="main">
+    <!-- 0 · BOOT -->
+    <section id="top" class="chapter hero" data-chapter="0" aria-label="Introduction">
+      <div class="chapter-body">
+        <p class="kicker">00 · Boot</p>
+        <p class="eyebrow"><span class="dot" aria-hidden="true"></span><span>Available for remote roles</span><span class="sep" aria-hidden="true">·</span><span>Neyshabur, Iran</span><span class="sep" aria-hidden="true">·</span><time data-clock>IRST</time></p>
+        <h1 class="hero-name" data-split>Abolfazl<br>Javadinia</h1>
+        <p class="hero-role">Senior Frontend Engineer</p>
+        <p class="hero-stack">React · Next.js · TypeScript</p>
+        <p class="hero-lede">I build scalable, high-performance web applications — from design systems to SSR platforms and AI-driven dashboards.</p>
+        <div class="cta">
+          <a class="btn btn-primary magnetic" href="mailto:mr.js.programmer@gmail.com">Get in touch<svg width="16" height="16" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+          <a class="btn btn-ghost" href="#experience">View experience</a>
+        </div>
+        <dl class="stats">
+          <div class="stat"><dt>years frontend</dt><dd><span data-count="5" data-suffix="+">5+</span></dd></div>
+          <div class="stat"><dt>year backend</dt><dd><span data-count="1">1</span></dd></div>
+          <div class="stat"><dt>remote roles</dt><dd><span data-count="5">5</span></dd></div>
+        </dl>
+        <a class="scroll-cue" href="#about"><span>Scroll</span><i class="scroll-line" aria-hidden="true"></i></a>
+      </div>
+      <div class="stage" aria-hidden="true"></div>
+    </section>
+
+    <!-- 1 · PARSE -->
+    <section id="about" class="chapter" data-chapter="1" aria-labelledby="about-title">
+      <div class="chapter-body">
+        <p class="kicker reveal">01 · Parse — Profile</p>
+        <h2 id="about-title" class="section-title reveal">Frontend-focused, <em>full-stack</em> capable.</h2>
+        <p class="summary reveal">Frontend-focused Full Stack Developer with 5+ years of professional experience building scalable, high-performance web applications with React, Next.js, and TypeScript, complemented by 1 year of backend experience with Node.js, Express, and NestJS. Skilled in design systems, SSR and hybrid rendering, performance and SEO optimization, and data/AI-driven dashboards.</p>
+        <ol class="strengths" aria-label="Core strengths">
+          <li class="reveal"><span class="num" aria-hidden="true">01</span><div><strong>Production scale</strong><span>React &amp; Next.js on large-scale, high-traffic websites</span></div></li>
+          <li class="reveal"><span class="num" aria-hidden="true">02</span><div><strong>Design systems</strong><span>Reusable component architecture with ShadCN UI, Radix UI, Storybook</span></div></li>
+          <li class="reveal"><span class="num" aria-hidden="true">03</span><div><strong>Rendering &amp; quality</strong><span>SSR / hybrid rendering, performance, accessibility, SEO</span></div></li>
+          <li class="reveal"><span class="num" aria-hidden="true">04</span><div><strong>Data &amp; AI interfaces</strong><span>Real-time dashboards and ML output visualization</span></div></li>
+          <li class="reveal"><span class="num" aria-hidden="true">05</span><div><strong>Remote collaboration</strong><span>Cross-functional teams across backend, design, data science, product</span></div></li>
+        </ol>
+        <div class="about-meta">
+          <div class="about-meta-grid">
+            <section class="meta-block card reveal" aria-labelledby="edu-title">
+              <h3 id="edu-title" class="meta-title">Education</h3>
+              <ul class="edu-list">
+                <li>
+                  <span class="edu-degree">B.Sc. Computer Science</span>
+                  <span class="edu-meta"><span class="status status-done">Completed</span></span>
+                </li>
+                <li>
+                  <span class="edu-degree">B.Sc. Computer Engineering</span>
+                  <span class="edu-meta"><span>Hakim Sabzevari University, Sabzevar</span><span class="sep" aria-hidden="true">·</span><span class="status status-live">In progress</span></span>
+                </li>
+              </ul>
+            </section>
+            <section class="meta-block card reveal" aria-labelledby="lang-title">
+              <h3 id="lang-title" class="meta-title">Languages</h3>
+              <ul class="lang-list">
+                <li><span class="lang-name">Persian</span><span class="lang-level">Native</span></li>
+                <li><span class="lang-name">English</span><span class="lang-level">Professional working proficiency (strong in technical reading and writing)</span></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="stage" aria-hidden="true"></div>
+    </section>
+
+    <!-- 2 · STYLE -->
+    <section id="skills" class="chapter" data-chapter="2" aria-labelledby="skills-title">
+      <div class="chapter-body">
+        <p class="kicker reveal">02 · Style — Toolkit</p>
+        <h2 id="skills-title" class="section-title reveal">The <em>toolkit</em>.</h2>
+        <div class="skills">
+          <div class="skill-grid">
+            <article class="skill-group card reveal" data-skill="0" tabindex="0"><header><span class="idx">01</span><h3>Frontend</h3></header><ul class="chips"><li>React</li><li>Next.js</li><li>App Router</li><li>SSR / SSG</li><li>Hybrid Rendering</li><li>TypeScript</li><li>JavaScript ES6+</li><li>HTML5</li><li>CSS3</li><li>SCSS</li></ul></article>
+            <article class="skill-group card reveal" data-skill="1" tabindex="0"><header><span class="idx">02</span><h3>UI &amp; Styling</h3></header><ul class="chips"><li>Tailwind CSS</li><li>ShadCN UI</li><li>Radix UI</li><li>Material UI</li><li>Framer Motion</li><li>Storybook</li></ul></article>
+            <article class="skill-group card reveal" data-skill="2" tabindex="0"><header><span class="idx">03</span><h3>State &amp; Data</h3></header><ul class="chips"><li>React Query</li><li>Zustand</li><li>Context API</li><li>React Hook Form</li><li>Zod</li><li>REST</li><li>GraphQL</li></ul></article>
+            <article class="skill-group card reveal" data-skill="3" tabindex="0"><header><span class="idx">04</span><h3>Backend</h3></header><ul class="chips"><li>Node.js</li><li>Express.js</li><li>NestJS</li><li>JWT Auth</li><li>PostgreSQL</li><li>MongoDB</li></ul></article>
+            <article class="skill-group card reveal" data-skill="4" tabindex="0"><header><span class="idx">05</span><h3>Testing &amp; Quality</h3></header><ul class="chips"><li>Jest</li><li>React Testing Library</li><li>Lighthouse</li><li>Chrome DevTools</li><li>React Profiler</li></ul></article>
+            <article class="skill-group card reveal" data-skill="5" tabindex="0"><header><span class="idx">06</span><h3>Tools &amp; Workflow</h3></header><ul class="chips"><li>Git / GitHub</li><li>CI/CD</li><li>Docker (basic)</li><li>Vite</li><li>Webpack</li><li>Vercel</li><li>Firebase</li><li>Postman</li><li>Agile / Scrum</li></ul></article>
+          </div>
+        </div>
+      </div>
+      <div class="stage" aria-hidden="true"></div>
+    </section>
+
+    <!-- 3 · LAYOUT -->
+    <section id="experience" class="chapter" data-chapter="3" aria-labelledby="experience-title">
+      <div class="chapter-body">
+        <p class="kicker reveal">03 · Layout — Experience</p>
+        <h2 id="experience-title" class="section-title reveal">Where I've <em>shipped</em>.</h2>
+        <ol class="timeline">
+          <li class="job" data-job="0" data-company="Capital Chain" data-role="Full Stack Developer" data-period="Feb 2026 – Sep 2026" data-place="Remote" data-tech="Next.js · TypeScript · Tailwind CSS · API Routes">
+            <div class="job-card card">
+              <div class="job-when"><span class="job-period">Feb 2026 – Sep 2026</span><span class="job-place">Remote</span></div>
+              <div class="job-what">
+                <h3 class="job-title"><span class="job-role">Full Stack Developer</span><span class="sr-only"> at </span><span class="job-company">Capital Chain</span></h3>
+                <ul class="job-points">
+                  <li>Developed frontend and backend features end to end in Next.js, including UI, API routes, server-side logic, and data flow.</li>
+                  <li>Built reusable, modular UI components with TypeScript and Tailwind CSS.</li>
+                  <li>Owned features independently from implementation through deployment, with a focus on performance, scalability, and clean code.</li>
+                </ul>
+                <p class="tech">Next.js · TypeScript · Tailwind CSS · API Routes</p>
+              </div>
+            </div>
+          </li>
+          <li class="job" data-job="1" data-company="World Government Summit" data-role="Frontend Developer" data-period="Sep 2024 – Sep 2025" data-place="Remote" data-tech="Next.js · TypeScript · Tailwind CSS · ShadCN UI · Sitefinity CMS (.NET)">
+            <div class="job-card card">
+              <div class="job-when"><span class="job-period">Sep 2024 – Sep 2025</span><span class="job-place">Remote</span></div>
+              <div class="job-what">
+                <h3 class="job-title"><span class="job-role">Frontend Developer</span><span class="sr-only"> at </span><span class="job-company">World Government Summit</span></h3>
+                <ul class="job-points">
+                  <li>Built and maintained the complete frontend of <a class="inline-link" href="https://www.worldgovernmentsummit.org" target="_blank" rel="noopener">worldgovernmentsummit.org</a>, a high-traffic international platform, using Next.js, TypeScript, and Tailwind CSS.</li>
+                  <li>Integrated the frontend with a .NET / Sitefinity CMS backend, delivering dynamic, CMS-driven pages and content workflows.</li>
+                  <li>Created reusable components with ShadCN UI to maintain a consistent, scalable design system across the site.</li>
+                  <li>Optimized responsiveness, accessibility, performance, and SEO following modern UI best practices.</li>
+                  <li>Collaborated closely with backend and design teams to ensure accurate, pixel-faithful implementation.</li>
+                </ul>
+                <p class="tech">Next.js · TypeScript · Tailwind CSS · ShadCN UI · Sitefinity CMS (.NET)</p>
+              </div>
+            </div>
+          </li>
+          <li class="job" data-job="2" data-company="Digbri" data-role="Senior Frontend Developer" data-period="Mar 2022 – Sep 2024" data-place="Remote" data-tech="Next.js · TypeScript · ShadCN UI · Zustand · Firebase · Chart.js · Jest">
+            <div class="job-card card">
+              <div class="job-when"><span class="job-period">Mar 2022 – Sep 2024</span><span class="job-place">Remote</span></div>
+              <div class="job-what">
+                <h3 class="job-title"><span class="job-role">Senior Frontend Developer</span><span class="sr-only"> at </span><span class="job-company">Digbri</span></h3>
+                <p class="job-sub">AI Data Analytics Platform</p>
+                <ul class="job-points">
+                  <li>Designed and built a modular, component-driven UI with Next.js and TypeScript that interacts directly with an AI analytics engine.</li>
+                  <li>Developed interactive dashboards and visual reports with Chart.js on top of ML-processed and real-time data.</li>
+                  <li>Implemented authentication, database access, and real-time data handling with Firebase.</li>
+                  <li>Used Zustand to coordinate user interactions with AI responses and manage complex client state.</li>
+                  <li>Worked with the data science team to define how ML model outputs are presented in the interface.</li>
+                </ul>
+                <p class="tech">Next.js · TypeScript · ShadCN UI · Zustand · Firebase · Chart.js · Jest</p>
+              </div>
+            </div>
+          </li>
+          <li class="job" data-job="3" data-company="Pouyamachine" data-role="Senior Frontend Developer" data-period="Feb 2022 – Sep 2024" data-place="Remote · Tehran" data-tech="React · Next.js 13 · TypeScript · Tailwind CSS · Storybook · CI/CD">
+            <div class="job-card card">
+              <div class="job-when"><span class="job-period">Feb 2022 – Sep 2024</span><span class="job-place">Remote · Tehran</span></div>
+              <div class="job-what">
+                <h3 class="job-title"><span class="job-role">Senior Frontend Developer</span><span class="sr-only"> at </span><span class="job-company">Pouyamachine</span></h3>
+                <p class="job-sub">Technology Development Co.</p>
+                <ul class="job-points">
+                  <li>Designed and implemented a scalable, modular component system using React, Next.js, TypeScript, and Tailwind CSS.</li>
+                  <li>Migrated parts of the application to Next.js 13, improving client–server communication with a focus on SSR.</li>
+                  <li>Established a design system documented in Storybook.</li>
+                  <li>Led technical decisions for internal tooling: restructured the codebase, defined linting rules, and implemented CI/CD to improve developer experience.</li>
+                  <li>Partnered with product owners to translate business requirements into production features.</li>
+                </ul>
+                <p class="tech">React · Next.js 13 · TypeScript · Tailwind CSS · Storybook · CI/CD</p>
+              </div>
+            </div>
+          </li>
+          <li class="job" data-job="4" data-company="Azad Gostar Isfahan" data-role="Frontend Developer" data-period="Jan 2021 – Feb 2022" data-place="Remote · Isfahan" data-tech="React · Next.js · TypeScript · Tailwind CSS">
+            <div class="job-card card">
+              <div class="job-when"><span class="job-period">Jan 2021 – Feb 2022</span><span class="job-place">Remote · Isfahan</span></div>
+              <div class="job-what">
+                <h3 class="job-title"><span class="job-role">Frontend Developer</span><span class="sr-only"> at </span><span class="job-company">Azad Gostar Isfahan</span></h3>
+                <ul class="job-points">
+                  <li>Built responsive, reusable, mobile-friendly UI components with React, Next.js, TypeScript, and Tailwind CSS.</li>
+                  <li>Migrated pages and components from Next.js 12 to 13, adopting the App Router and Server Components.</li>
+                  <li>Refactored and reorganized legacy code, improving code quality, SEO, and performance.</li>
+                  <li>Worked closely with backend and design teams to ensure accurate implementation.</li>
+                </ul>
+                <p class="tech">React · Next.js · TypeScript · Tailwind CSS</p>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+      <div class="stage" aria-hidden="true"></div>
+    </section>
+
+    <!-- 4 · PAINT -->
+    <section id="projects" class="chapter" data-chapter="4" aria-labelledby="projects-title">
+      <div class="chapter-body">
+        <p class="kicker reveal">04 · Paint — Selected work</p>
+        <h2 id="projects-title" class="section-title reveal">Selected <em>work</em>.</h2>
+        <div class="projects">
+          <div class="project-grid">
+            <article class="project card reveal" data-project="0" data-title="Neshan Map Playground" data-tech="Next.js 14 · TypeScript · ShadCN UI · Framer Motion" tabindex="0">
+              <header class="project-head"><span class="idx">01</span></header>
+              <h3>Neshan Map Playground</h3>
+              <p>Interactive guide for the Neshan Maps SDK. Demonstrates custom markers, map events, and dynamic controls; resolved SSR issues using lazy loading and dynamic imports.</p>
+              <p class="tech">Next.js 14 · TypeScript · ShadCN UI · Framer Motion</p>
+            </article>
+            <article class="project card reveal" data-project="1" data-title="Cloudius Cloud Admin Panel" data-tech="React · Vite · TypeScript · Tailwind CSS" tabindex="0">
+              <header class="project-head"><span class="idx">02</span></header>
+              <h3>Cloudius Cloud Admin Panel</h3>
+              <p>Lead developer of a cloud management dashboard.</p>
+              <p class="tech">React · Vite · TypeScript · Tailwind CSS</p>
+            </article>
+            <article class="project card reveal" data-project="2" data-title="Next.js ShadCN Dashboard" data-tech="Next.js · ShadCN UI" tabindex="0">
+              <header class="project-head"><span class="idx">03</span><span class="tag">open source</span></header>
+              <h3>Next.js ShadCN Dashboard</h3>
+              <p>Fast, responsive dashboard template.</p>
+              <p class="tech">Next.js · ShadCN UI</p>
+              <a class="link" href="https://github.com/MrJs6781/next-js-shadcn-dashboard" target="_blank" rel="noopener"><span>github.com/MrJs6781/next-js-shadcn-dashboard</span><svg width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </article>
+          </div>
+        </div>
+      </div>
+      <div class="stage" aria-hidden="true"></div>
+    </section>
+
+    <!-- 5 · SHIP -->
+    <section id="contact" class="chapter" data-chapter="5" aria-labelledby="contact-title">
+      <div class="chapter-body">
+        <p class="kicker reveal">05 · Ship — Contact</p>
+        <h2 id="contact-title" class="section-title reveal">Let's build something <em>fast</em>.</h2>
+        <div class="mail-row reveal">
+          <a class="mail" href="mailto:mr.js.programmer@gmail.com">mr.js.programmer@gmail.com</a>
+          <button class="btn btn-ghost btn-sm" type="button" data-copy="mr.js.programmer@gmail.com">Copy</button>
+        </div>
+        <ul class="socials reveal" aria-label="Social profiles">
+          <li><a href="https://linkedin.com/in/abolfazl-javadineya" target="_blank" rel="noopener"><span>LinkedIn</span><svg width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+          <li><a href="https://github.com/MrJs6781" target="_blank" rel="noopener"><span>GitHub</span><svg width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+          <li><a href="https://x.com/mrjs6781" target="_blank" rel="noopener"><span>X</span><svg width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+          <li><a href="https://medium.com/@mr.js.programmer" target="_blank" rel="noopener"><span>Medium</span><svg width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+        </ul>
+        <div class="info-row reveal">
+          <div class="time-card card">
+            <span class="info-label">Local time</span>
+            <time class="time-value" data-clock>IRST</time>
+            <span class="time-diff"><span data-clock-diff>Tehran time (UTC+3:30)</span></span>
+          </div>
+          <div class="print-card card">
+            <span class="info-label">Resume</span>
+            <p>A clean one-page version, ready for PDF.</p>
+            <button class="btn btn-ghost btn-sm" type="button" data-print>Print / Save as PDF</button>
+          </div>
+        </div>
+      </div>
+      <div class="stage" aria-hidden="true"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span data-year>2026</span> Abolfazl Javadinia · Designed &amp; built with Three.js</p>
+  </footer>
+
+  <dialog id="palette" class="palette" aria-label="Command palette"></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
